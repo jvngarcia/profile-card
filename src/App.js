@@ -8,10 +8,12 @@ import iconWeb from './assets/images/newspaper-regular.svg';
 
 // PERFIL
 import profile from './assets/images/perfil.png';
+import banner from './assets/images/banner-jvngarcia-profile.png';
+import background from './assets/images/background.png';
 
 function App() {
   return (
-    <Card cardBoxProfile={ profile }>
+    <Card cardBoxProfile={ profile } cardBoxBanner={ banner }  background={ background }>
       <h4 className='text-center title-padding'>Angel Garcia</h4>
       <h6 className='text-center subtitle-padding'>Programador</h6>
       <div className='card__box__container'>

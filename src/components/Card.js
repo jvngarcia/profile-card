@@ -7,7 +7,7 @@ const Card = ( props ) =>{
     const profile   = ( props.cardBoxProfile ) ? props.cardBoxProfile : noFoto;
 
     return(
-        <div id="card">
+        <div id="card" style={{ backgroundImage: props.background }}>
             <div className="card__box">
                 <img src={ banner } alt='Imagen de portada' className="card__box-banner" />
                 <div className='card__box-profile'>
