@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from './components/Card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Card>
+      <h4 className='text-center title-padding'>Angel Garcia <span className='mute'>22</span></h4>
+      <h6 className='text-center subtitle-padding'>Programador</h6>
+      <div className='card__box__container'>
+        <div className='redes-sociales'>
+          <div className='text-center'>
+            Instagram
+          </div>
+          <div className='text-center'>
+            Tiktok
+          </div>
+          <div className='text-center'>
+            LinkedIn
+          </div>
+          <div className='text-center grid-center'>
+            Sitio Web
+          </div>
+        </div>
+      </div>
+    </Card>
   );
 }
 
