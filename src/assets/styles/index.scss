@@ -32,7 +32,7 @@ code {
 .subtitle-padding{
   margin-block-start: 0;
   margin-block-end: 0;
-  font-size: 16px;
+  font-size: 14px;
   color: $mute;
   font-weight: 400;
 }
@@ -65,17 +65,17 @@ code {
       justify-content: center;
 
       .card__box-profile-img{
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         object-fit: cover;
-        border: 8px solid #fff;
+        // border: 8px solid #fff;
         border-radius: 50%;
       }
     }
 
     .card__box__container{
       margin-top: 25px;
-      border-top: 1px solid $mute;
+      border-top: 1px solid #e5e5e5;
       padding: {
         left: 20px;
         right: 20px;
@@ -86,13 +86,36 @@ code {
         margin-top: 25px;
         color: $mute;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 10px;
         justify-content: center;
 
-        .grid-center{
-          margin-top: 25px;
-          grid-column: 2;
+        .contenedor-items{
+          text-decoration: none;
+          color: $mute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover{
+            img{
+              filter: opacity(.8);
+            }
+          }
+        }
+
+        div.contenedor-imagen{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+
+          img{
+            width: 25px;
+            filter: opacity(0.5);
+            transition: all .5s ease;
+
+          }
         }
       }
       
